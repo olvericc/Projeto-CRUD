@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="sortcut icon" href="img/icone.png" type="image/x-icon" />
+  <link href="#" rel="stylesheet">
+  <title>Super Bike Store</title>
+</head>
+
+<!-- Estilos CSS -->
+
+<style>
+
+  body {
+    font: 10px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+
+  p {font-size: 16px;}
+
+  .margin {margin-bottom: 45px;}
+
+  .bg-1 { 
+    
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    color: #ffffff;
+  }
+
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+
+  .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  .navbar-nav  li a:hover {
+    color: #66ff99 !important;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+</style>
+
+<body>
+
+  <!-- Barra de navegação -->
+
+  <nav class="navbar navbar-default">
+
+    <div class="container">
+
+      <div class="navbar-header">
+
+        <a class="navbar-brand" href="index.html"> Início </a>
+        
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="adm.html" > Administração </a></li>
+          <li><a href="login.html" > Login </a></li>
+          <li><a href="bikes.html"> Bikes </a></li>
+          <li><a href="view/cliente.php"> Cliente </a></li>
+          <li><a href="view/funcionario.php"> Funcionário </a></li>
+          <li><a href="view/produtos.php"> Produtos </a></li>
+          <li><a href="view/venda.php"> Venda </a></li>
+          <li><a href="relatorio.php"> Relatório </a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Primeiro Container -->
+
+  <div class="container-fluid bg-1 text-center">
+
+    <h3 class="margin" >Quem nós somos?</h3>
+
+    <img src="..//MatheusReis&EricLopes/img/logo_projeto.png" class="img-responsive img-circle margin" style="display:inline" alt="Bike" width="350" height="350">
+
+    <h3 style="font-size: 40px; font-style: initial;" >Somos a melhor loja de bicicletas da America Latina!</h3>
+
+  </div>
+
+  <!-- Segundo Container -->
+
+  <div class="container-fluid bg-2 text-center">
+
+    <h2 class="margin">Um pouco sobre nós</h2>
+
+    <p>
+      Atualmente, a Super Bike Store atende todos os estados brasileiros e já enviou produtos para mais de 64 cidades. <br>
+      Seus principais diferenciais são a qualidade dos insumos, comprados direto de produtores locais, e a consciência ambiental em todas as etapas de produção.  
+    </p>
+
+    <a href="#" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-search"></span> Buscar...</a>
+
+  </div>
+
+  <!-- Terceiro Container (Grade) -->
+
+    <div class="container-fluid bg-3 text-center">    
+
+      <h3 class="margin">Bikes mais vendidas</h3><br>
+
+      <div class="row">
+    
+        <!-- Bike 1 -->
+
+        <div class="col-sm-4">
+          <p>Bicicleta South Stark 2021 Aro 29</p>
+          <img src="../MatheusReis&EricLopes/img/bicicleta1.png" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+
+        <!-- Bike 2 -->
+
+        <div class="col-sm-4"> 
+          <p>Bicicleta South Legend Aro 29</p>
+          <img src="../MatheusReis&EricLopes/img/bicicleta2.png" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+
+        <!-- Bike 3 -->
+
+        <div class="col-sm-4"> 
+          <p>Bicicleta Alum 29 Ksw Cambios GTA 24 Vel A</p>
+          <img src="../MatheusReis&EricLopes/img/bicicleta3.png" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+
+      </div>
+
+  </div>
+
+  <!-- Rodapé -->
+
+  <footer class="container-fluid bg-4 text-center">
+    <p style="font-size: 20px;"> Super Bike Store </p> 
+    <p style="font-size: 20px;"> By Matheus Reis & Eric Lopes </p>
+    <p style="font-size: 20px;"> <a href="https://copyright.com.br/index.html?gclid=Cj0KCQiAwf39BRCCARIsALXWETzuUj-ZmnGbK_nH2m9b9T5-QEJ0pa4RqFael34k9q0dV7WdCnF4CMEaAu2iEALw_wcB"> ©  2001-2020 Copyright.com.br - All Rights Reserved </a></p>
+  </footer>
+   
+</body>
+
+</html>

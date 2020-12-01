@@ -1,0 +1,40 @@
+CREATE DATABASE super_bike;
+
+CREATE TABLE clientes(
+	id_c INT NOT NULL AUTO_INCREMENT,
+	nome_c VARCHAR(50) NOT NULL,
+	idade INT NOT NULL,
+	sexo VARCHAR(10) NOT NULL,
+	codigo_c INT NOT NULL,
+	PRIMARY KEY (id_c)
+)
+
+CREATE TABLE funcionarios(
+	id_f INT NOT NULL AUTO_INCREMENT,
+	nome_f VARCHAR(50) NOT NULL,
+	cpf INT NOT NULL,
+	codigo_f INT NOT NULL,
+	PRIMARY KEY (id_f)
+)
+
+CREATE TABLE produtos(
+	id_p INT NOT NULL AUTO_INCREMENT,
+	descricao VARCHAR(50) NOT NULL,
+	quantidade INT NOT NULL,
+	codigo_p INT NOT NULL,
+	PRIMARY KEY (id_p)
+)
+
+CREATE TABLE vendas(
+	id_v INT NOT NULL AUTO_INCREMENT,
+	nome_cliente VARCHAR(50) NOT NULL,
+	nome_funcionario VARCHAR (50) NOT NULL,
+	bike_descricao VARCHAR (50) NOT NULL,
+	bike_quantidade INT NOT NULL,
+	bike_preco INT NOT NULL,
+	data_compra DATE NOT NULL,
+	PRIMARY KEY (id_v)	
+)
+
+
+
